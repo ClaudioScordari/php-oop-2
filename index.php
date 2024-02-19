@@ -22,7 +22,6 @@ require_once __DIR__ . '/kennel.php';
         </h1>
 
         <div class="box-card">
-
             <!-- Croccantini cane -->
             <div class="card">
                 <div class="box-img">
@@ -97,6 +96,7 @@ require_once __DIR__ . '/kennel.php';
                 </div>
             </div>
 
+            <!-- Gioco palla per cane -->
             <div class="card">
                 <div class="box-img">
                     <?php
@@ -125,8 +125,15 @@ require_once __DIR__ . '/kennel.php';
                         ?>
                     </div>
                 </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $gameOne->categoryIcon;
+                    ?>
+                </div>
             </div>
 
+            <!-- Cuccia per cane -->
             <div class="card">
                 <div class="box-img">
                     <?php
@@ -154,6 +161,86 @@ require_once __DIR__ . '/kennel.php';
                         echo get_class($kennelOne);
                         ?>
                     </div>
+                </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $kennelOne->categoryIcon;
+                    ?>
+                </div>
+            </div>
+
+            <!-- Gioco gomitolo gatto -->
+            <div class="card">
+                <div class="box-img">
+                    <?php
+                    echo $gameTwo->image;
+                    ?>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $gameTwo->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $gameTwo->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($gameTwo);
+                        ?>
+                    </div>
+                </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $gameTwo->categoryIcon;
+                    ?>
+                </div>
+            </div>
+
+            <!-- Cuccia per gatto -->
+            <div class="card">
+                <div class="box-img">
+                    <?php
+                    echo $kennelTwo->image;
+                    ?>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $kennelTwo->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $kennelTwo->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($kennelTwo);
+                        ?>
+                    </div>
+                </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $kennelTwo->categoryIcon;
+                    ?>
                 </div>
             </div>
         </div>

@@ -7,16 +7,16 @@ class Food extends Product
     public $ingredients; // ingredienti
     public $digestibility; // digeribilità
 
-    public function __construct(string $nameFood, float $price, string $animal, string $tagImg)
+    public function __construct(string $name, float $price, string $animal, string $tagImg)
     {
-        $this->title = $nameFood;
+        $this->title = $name;
         $this->price = $price;
         $this->setCategoryIcon($animal);
         $this->setImageProduct($tagImg);
     }
 }
 
-// Croccantini
+// Croccantini per cane
 $foodOne = new Food(
     'ZampaFelice Bocconcini al Pollo',
     6.50,
