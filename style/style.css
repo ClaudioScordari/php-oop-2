@@ -6,6 +6,7 @@
 .box-card{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -23,5 +24,13 @@
 }
 
 .box-img img{
+    width: 100%;
+}
+
+.box-icon{
+    width: 100%;
+}
+
+.box-icon img{
     width: 100%;
 }

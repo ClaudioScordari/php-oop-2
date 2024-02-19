@@ -7,9 +7,9 @@ class Category extends Product
 
     public function __construct($name)
     {
-        $this->nameCategory = $name;
+        $this->nameCategory = $name; // il nome della categoria è cane o gatto
     }
 }
 
-$dog = new Category('cane');
-$cat = new Category('gatto');
+$dog = new Category('dog');
+$cat = new Category('cat');

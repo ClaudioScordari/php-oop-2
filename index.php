@@ -22,6 +22,8 @@ require_once __DIR__ . '/kennel.php';
         </h1>
 
         <div class="box-card">
+
+            <!-- Croccantini cane -->
             <div class="card">
                 <div class="box-img">
                     <?php
@@ -49,6 +51,49 @@ require_once __DIR__ . '/kennel.php';
                         echo get_class($foodOne);
                         ?>
                     </div>
+                </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $foodOne->categoryIcon;
+                    ?>
+                </div>
+            </div>
+
+            <!-- Croccantini gatto -->
+            <div class="card">
+                <div class="box-img">
+                    <?php
+                    echo $foodTwo->image;
+                    ?>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $foodTwo->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $foodTwo->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($foodTwo);
+                        ?>
+                    </div>
+                </div>
+
+                <div class="box-icon">
+                    <?php
+                    echo $foodTwo->categoryIcon;
+                    ?>
                 </div>
             </div>
 
