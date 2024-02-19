@@ -17,4 +17,4 @@ $gameOne = new Game(
     'Palla rimbalzante',
     10.00
 );
-$gameOne->image = '<img alt="immagine_croccantini" src="https://m.media-amazon.com/images/I/51yZAEHEJZL.jpg">';
+$gameOne->image = '<img alt="palla" src="https://m.media-amazon.com/images/I/51yZAEHEJZL.jpg">';

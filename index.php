@@ -2,6 +2,7 @@
 require_once __DIR__ . '/product.php';
 require_once __DIR__ . '/food.php';
 require_once __DIR__ . '/game.php';
+require_once __DIR__ . '/kennel.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,6 +77,36 @@ require_once __DIR__ . '/game.php';
                         Il tipo dell'articolo è
                         <?php
                         echo get_class($gameOne);
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box-img">
+                    <?php
+                    echo $kennelOne->image;
+                    ?>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $kennelOne->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $kennelOne->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($kennelOne);
                         ?>
                     </div>
                 </div>
