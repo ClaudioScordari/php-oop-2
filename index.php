@@ -20,26 +20,68 @@ require_once __DIR__ . '/game.php';
             Prodotti per animali
         </h1>
 
-        <div class="card">
-            <div class="box-img">
-                img
+        <div class="box-card">
+            <div class="card">
+                <div class="box-img">
+                    <?php
+                    echo $foodOne->image;
+                    ?>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $foodOne->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $foodOne->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($foodOne);
+                        ?>
+                    </div>
+                </div>
             </div>
 
-            <div class="info-card">
-                <h3 class="title">
+            <div class="card">
+                <div class="box-img">
                     <?php
-                    echo $foodOne->title;
+                    echo $gameOne->image;
                     ?>
-                </h3>
+                </div>
 
-                <div class="price">
-                    Il prezzo è di €
-                    <?php
-                    echo $foodOne->price;
-                    ?>
+                <div class="info-card">
+                    <h3 class="title">
+                        <?php
+                        echo $gameOne->title;
+                        ?>
+                    </h3>
+
+                    <div class="price">
+                        Il prezzo è di €
+                        <?php
+                        echo $gameOne->price;
+                        ?>
+                    </div>
+
+                    <div class="type">
+                        Il tipo dell'articolo è
+                        <?php
+                        echo get_class($gameOne);
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 

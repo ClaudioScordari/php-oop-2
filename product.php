@@ -7,5 +7,4 @@ class Product
     public $image;
     public $price;
     public $categoryIcon;
-    public $typeOfArticle;
 }

@@ -3,6 +3,25 @@
     margin: 0 auto;
 }
 
+.box-card{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.info-card{
+    padding: 10px;
+}
+
 .card{
-    width: 300px;
+    width: calc((100% / 5) - 15px);
+    border: 1px solid black;
+}
+
+.box-img{
+    width: 100%;
+}
+
+.box-img img{
+    width: 100%;
 }
