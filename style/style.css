@@ -19,18 +19,8 @@
     border: 1px solid black;
 }
 
-.box-img{
-    width: 100%;
-}
-
-.box-img img{
-    width: 100%;
-}
-
+.box-img,
+.box-img img,
 .box-icon{
-    width: 100%;
-}
-
-.box-icon img{
     width: 100%;
 }

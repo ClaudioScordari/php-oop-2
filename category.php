@@ -3,13 +3,13 @@ require_once __DIR__ . '/product.php';
 
 class Category extends Product
 {
-    public $nameCategory;
+    public $name;
 
     public function __construct($name)
     {
-        $this->nameCategory = $name; // il nome della categoria è cane o gatto
+        $this->name = $name; // il nome della categoria è cane o gatto
     }
 }
 
-$dog = new Category('dog');
-$cat = new Category('cat');
+$dog = new Category('🐶');
+$cat = new Category('🐱');
