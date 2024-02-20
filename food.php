@@ -7,10 +7,16 @@ class Food extends Product
     public $ingredients; // ingredienti
     public $digestibility; // digeribilità
 
-    public function __construct(string $name, float $price, Category $animal, string $img)
+    public function __construct(string $name,  $price, Category $animal, string $img)
     {
         $this->title = $name;
-        $this->price = $price;
+
+        if (is_numeric($price)) {
+            $this->price = $price;
+        } else {
+            throw new Exception('ERRORE del tipo di dato');
+        }
+
         $this->category = $animal;
         $this->image = $img;
     }

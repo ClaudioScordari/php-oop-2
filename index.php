@@ -10,7 +10,7 @@ $allProducts = [];
 // Croccantini per cane
 $foodOne = new Food(
     'ZampaFelice Bocconcini al Pollo',
-    6.50,
+    'pippo',
     $dog,
     'https://media.istockphoto.com/id/483452891/it/foto/cibo-per-animali-domestici.jpg?s=612x612&w=0&k=20&c=TrLVzTAt3VZXcbO70T9Eea5T1zjZHwRLdvPFZeMyEC0='
 );
@@ -118,7 +118,6 @@ $allProducts[] = $kennelTwo;
                             ?>
                         </div>
                     </div>
-
                 </div>
 
             <?php
